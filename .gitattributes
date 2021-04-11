@@ -1,0 +1,9 @@
+* text eol=lf
+
+go.mod text eol=lf
+go.sum text eol=lf
+
+*.png binary
+*.jpg binary
+
+# List of paths ignored when using the `archive` command.
