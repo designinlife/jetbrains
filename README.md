@@ -28,7 +28,7 @@ jetbrains ls
 | PhpStorm           | 416.3 MB | 2021.1   |  2021-04-08  |
 | CLion              | 550.6 MB | 2021.1   |  2021-04-07  |
 
-### The download link for `Windows`
+### Link for `Windows`
 
 - <https://download-cf.jetbrains.com/ruby/RubyMine-2021.1.exe>
 - <https://download-cf.jetbrains.com/rider/JetBrains.Rider-2021.1.1.exe>
@@ -41,7 +41,7 @@ jetbrains ls
 - <https://download-cf.jetbrains.com/webide/PhpStorm-2021.1.exe>
 - <https://download-cf.jetbrains.com/cpp/CLion-2021.1.exe>
 
-### The download link for `Linux`
+### Link for `Linux`
 
 - <https://download-cf.jetbrains.com/ruby/RubyMine-2021.1.tar.gz>
 - <https://download-cf.jetbrains.com/rider/JetBrains.Rider-2021.1.1.tar.gz>
@@ -53,7 +53,7 @@ jetbrains ls
 - <https://download-cf.jetbrains.com/webide/PhpStorm-2021.1.tar.gz>
 - <https://download-cf.jetbrains.com/cpp/CLion-2021.1.tar.gz>
 
-### The download link for `Mac`
+### Link for `Mac`
 
 - <https://download-cf.jetbrains.com/ruby/RubyMine-2021.1.dmg>
 - <https://download-cf.jetbrains.com/rider/JetBrains.Rider-2021.1.1.dmg>
