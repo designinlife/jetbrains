@@ -147,13 +147,13 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 				}
 
 				if len(value.Downloads.Windows.Link) > 0 {
-					windowsLinks = append(windowsLinks, value.Downloads.Windows.Link)
+					windowsLinks = append(windowsLinks, strings.ReplaceAll(value.Downloads.Windows.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
 				}
 				if len(value.Downloads.Linux.Link) > 0 {
-					linuxLinks = append(linuxLinks, value.Downloads.Linux.Link)
+					linuxLinks = append(linuxLinks, strings.ReplaceAll(value.Downloads.Linux.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
 				}
 				if len(value.Downloads.Mac.Link) > 0 {
-					macLinks = append(macLinks, value.Downloads.Mac.Link)
+					macLinks = append(macLinks, strings.ReplaceAll(value.Downloads.Mac.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
 				}
 			}
 		}
