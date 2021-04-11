@@ -162,6 +162,7 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 
 		fmt.Println()
 		fmt.Println("The download link for \033[1;32mWindows\033[0m, follows as:")
+		fmt.Println("------------------------------------------")
 
 		for _, v1 := range windowsLinks {
 			fmt.Println(v1)
@@ -169,6 +170,7 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 
 		fmt.Println()
 		fmt.Println("The download link for \033[1;32mLinux\033[0m, follows as:")
+		fmt.Println("------------------------------------------")
 
 		for _, v1 := range linuxLinks {
 			fmt.Println(v1)
@@ -176,6 +178,7 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 
 		fmt.Println()
 		fmt.Println("The download link for \033[1;32mMac\033[0m, follows as:")
+		fmt.Println("------------------------------------------")
 
 		for _, v1 := range macLinks {
 			fmt.Println(v1)
