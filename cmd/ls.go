@@ -96,8 +96,8 @@ type ApiDataSet map[string][]apiDataItem
 var lsCmd = &cobra.Command{
 	Use:   "ls",
 	Short: "Get a list of the latest versions of Jetbrains software.",
-	Long: `This command will read the latest version number of the software through the Jetbrains HTTP-JSON interface 
-and print the download address of each platform.`,
+	Long: `This command will read the latest version number of the software 
+through the Jetbrains HTTP-JSON interface and print the download address of each platform.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		names := map[string]string{"AC": "AppCode", "CL": "CLion", "RSU": "ReSharper Ultimate", "DG": "DataGrip",
 			"GO": "Goland", "IIU": "IntelliJ IDEA", "PS": "PhpStorm", "PCP": "PyCharm", "RD": "Rider",
@@ -187,6 +187,7 @@ func init() {
 	rootCmd.AddCommand(lsCmd)
 
 	// Here you will define your flags and configuration settings.
+	lsCmd.Flags().Bool("help", false, "Show help.")
 
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
