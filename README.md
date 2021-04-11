@@ -14,9 +14,8 @@ jetbrains ls
 
 ## 最新下载地址
 
-+--------------------+----------+----------+--------------+
-|        NAME        |   SIZE   | VERSION  | RELEASE DATE |
-+--------------------+----------+----------+--------------+
+| NAME               |     SIZE | VERSION  | RELEASE DATE |
+| :----------------- | -------: | :------- | :----------: |
 | RubyMine           | 399.3 MB | 2021.1   |  2021-04-07  |
 | Rider              | 741.2 MB | 2021.1.1 |  2021-04-10  |
 | IntelliJ IDEA      | 764.2 MB | 2021.1   |  2021-04-07  |
@@ -28,42 +27,41 @@ jetbrains ls
 | DataGrip           | 401.3 MB | 2021.1   |  2021-04-01  |
 | PhpStorm           | 416.3 MB | 2021.1   |  2021-04-08  |
 | CLion              | 550.6 MB | 2021.1   |  2021-04-07  |
-+--------------------+----------+----------+--------------+
 
-### The download link for Windows, follows as:
+### The download link for `Windows`
 
-https://download.jetbrains.com/ruby/RubyMine-2021.1.exe
-https://download.jetbrains.com/rider/JetBrains.Rider-2021.1.1.exe
-https://download.jetbrains.com/idea/ideaIU-2021.1.exe
-https://download.jetbrains.com/resharper/dotUltimate.2021.1.1/JetBrains.dotUltimate.2021.1.1.exe
-https://download.jetbrains.com/go/goland-2021.1.exe
-https://download.jetbrains.com/webstorm/WebStorm-2021.1.exe
-https://download.jetbrains.com/python/pycharm-professional-2021.1.exe
-https://download.jetbrains.com/datagrip/datagrip-2021.1.exe
-https://download.jetbrains.com/webide/PhpStorm-2021.1.exe
-https://download.jetbrains.com/cpp/CLion-2021.1.exe
+https://download-cf.jetbrains.com/ruby/RubyMine-2021.1.exe
+https://download-cf.jetbrains.com/rider/JetBrains.Rider-2021.1.1.exe
+https://download-cf.jetbrains.com/idea/ideaIU-2021.1.exe
+https://download-cf.jetbrains.com/resharper/dotUltimate.2021.1.1/JetBrains.dotUltimate.2021.1.1.exe
+https://download-cf.jetbrains.com/go/goland-2021.1.exe
+https://download-cf.jetbrains.com/webstorm/WebStorm-2021.1.exe
+https://download-cf.jetbrains.com/python/pycharm-professional-2021.1.exe
+https://download-cf.jetbrains.com/datagrip/datagrip-2021.1.exe
+https://download-cf.jetbrains.com/webide/PhpStorm-2021.1.exe
+https://download-cf.jetbrains.com/cpp/CLion-2021.1.exe
 
-### The download link for Linux, follows as:
+### The download link for `Linux`
 
-https://download.jetbrains.com/ruby/RubyMine-2021.1.tar.gz
-https://download.jetbrains.com/rider/JetBrains.Rider-2021.1.1.tar.gz
-https://download.jetbrains.com/idea/ideaIU-2021.1.tar.gz
-https://download.jetbrains.com/go/goland-2021.1.tar.gz
-https://download.jetbrains.com/webstorm/WebStorm-2021.1.tar.gz
-https://download.jetbrains.com/python/pycharm-professional-2021.1.tar.gz
-https://download.jetbrains.com/datagrip/datagrip-2021.1.tar.gz
-https://download.jetbrains.com/webide/PhpStorm-2021.1.tar.gz
-https://download.jetbrains.com/cpp/CLion-2021.1.tar.gz
+https://download-cf.jetbrains.com/ruby/RubyMine-2021.1.tar.gz
+https://download-cf.jetbrains.com/rider/JetBrains.Rider-2021.1.1.tar.gz
+https://download-cf.jetbrains.com/idea/ideaIU-2021.1.tar.gz
+https://download-cf.jetbrains.com/go/goland-2021.1.tar.gz
+https://download-cf.jetbrains.com/webstorm/WebStorm-2021.1.tar.gz
+https://download-cf.jetbrains.com/python/pycharm-professional-2021.1.tar.gz
+https://download-cf.jetbrains.com/datagrip/datagrip-2021.1.tar.gz
+https://download-cf.jetbrains.com/webide/PhpStorm-2021.1.tar.gz
+https://download-cf.jetbrains.com/cpp/CLion-2021.1.tar.gz
 
-### The download link for Mac, follows as:
+### The download link for `Mac`
 
-https://download.jetbrains.com/ruby/RubyMine-2021.1.dmg
-https://download.jetbrains.com/rider/JetBrains.Rider-2021.1.1.dmg
-https://download.jetbrains.com/idea/ideaIU-2021.1.dmg
-https://download.jetbrains.com/go/goland-2021.1.dmg
-https://download.jetbrains.com/webstorm/WebStorm-2021.1.dmg
-https://download.jetbrains.com/python/pycharm-professional-2021.1.dmg
-https://download.jetbrains.com/objc/AppCode-2020.3.4.dmg
-https://download.jetbrains.com/datagrip/datagrip-2021.1.dmg
-https://download.jetbrains.com/webide/PhpStorm-2021.1.dmg
-https://download.jetbrains.com/cpp/CLion-2021.1.dmg
+https://download-cf.jetbrains.com/ruby/RubyMine-2021.1.dmg
+https://download-cf.jetbrains.com/rider/JetBrains.Rider-2021.1.1.dmg
+https://download-cf.jetbrains.com/idea/ideaIU-2021.1.dmg
+https://download-cf.jetbrains.com/go/goland-2021.1.dmg
+https://download-cf.jetbrains.com/webstorm/WebStorm-2021.1.dmg
+https://download-cf.jetbrains.com/python/pycharm-professional-2021.1.dmg
+https://download-cf.jetbrains.com/objc/AppCode-2020.3.4.dmg
+https://download-cf.jetbrains.com/datagrip/datagrip-2021.1.dmg
+https://download-cf.jetbrains.com/webide/PhpStorm-2021.1.dmg
+https://download-cf.jetbrains.com/cpp/CLion-2021.1.dmg
