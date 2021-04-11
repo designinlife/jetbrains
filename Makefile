@@ -3,7 +3,7 @@
 
 OUTDIR="bin"
 BINARY="jetbrains"
-BINOUT="$OUTDIR/$BINARY"
+BINOUT="${OUTDIR}/${BINARY}"
 
 all: clean build
 
