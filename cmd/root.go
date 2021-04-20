@@ -19,7 +19,11 @@ var rootCmd = &cobra.Command{
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	Run: func(cmd *cobra.Command, args []string) {
-		lsCmd.Run(nil, args)
+		c, a, err := cmd.Find([]string{"ls"})
+
+		if err == nil {
+			c.Run(c, a)
+		}
 	},
 }
 
