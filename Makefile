@@ -1,11 +1,11 @@
-.PHONY: build clean release all
+.PHONY: build clean release linux windows all
 .DEFAULT_GOAL := all
 
 OUTDIR="bin"
 BINARY="jetbrains"
 BINOUT="${OUTDIR}/${BINARY}"
 
-all: clean build
+all: clean release linux windows
 
 build:
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o ${BINOUT} .
