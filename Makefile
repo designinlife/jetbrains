@@ -1,9 +1,9 @@
 .PHONY: build clean release linux windows all
 .DEFAULT_GOAL := all
 
-OUTDIR="bin"
-BINARY="jetbrains"
-BINOUT="${OUTDIR}/${BINARY}"
+OUTDIR=bin
+BINARY=jetbrains
+BINOUT=${OUTDIR}/${BINARY}
 
 all: clean release linux windows
 
