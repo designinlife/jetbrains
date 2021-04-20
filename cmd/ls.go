@@ -7,6 +7,7 @@ import (
 	"github.com/olekukonko/tablewriter"
 	"github.com/spf13/cobra"
 	"os"
+	"sort"
 	"strings"
 )
 
@@ -92,6 +93,20 @@ type apiDataItem struct {
 
 type ApiDataSet map[string][]apiDataItem
 
+type tableDataSet [][]string
+
+func (t tableDataSet) Len() int {
+	return len(t)
+}
+
+func (t tableDataSet) Less(i, j int) bool {
+	return t[i][3] > t[j][3]
+}
+
+func (t tableDataSet) Swap(i, j int) {
+	t[i], t[j] = t[j], t[i]
+}
+
 // lsCmd represents the ls command
 var lsCmd = &cobra.Command{
 	Use:   "ls",
@@ -138,12 +153,14 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 		table.SetAutoWrapText(false)
 		table.SetColumnAlignment([]int{tablewriter.ALIGN_LEFT, tablewriter.ALIGN_RIGHT, tablewriter.ALIGN_LEFT, tablewriter.ALIGN_CENTER})
 
+		var tableData tableDataSet
+
 		for key, values := range apiResult {
 			for _, value := range values {
 				if key == "AC" {
-					table.Append([]string{names[key], common.ByteCountSI(value.Downloads.Mac.Size), value.Version, value.Date})
+					tableData = append(tableData, []string{names[key], common.ByteCountSI(value.Downloads.Mac.Size), value.Version, value.Date})
 				} else {
-					table.Append([]string{names[key], common.ByteCountSI(value.Downloads.Windows.Size), value.Version, value.Date})
+					tableData = append(tableData, []string{names[key], common.ByteCountSI(value.Downloads.Windows.Size), value.Version, value.Date})
 				}
 
 				if len(value.Downloads.Windows.Link) > 0 {
@@ -158,6 +175,9 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 			}
 		}
 
+		sort.Sort(tableData)
+
+		table.AppendBulk(tableData)
 		table.Render()
 
 		fmt.Println()

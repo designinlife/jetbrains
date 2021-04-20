@@ -15,10 +15,12 @@ var cfgFile string
 var rootCmd = &cobra.Command{
 	Use:   "jetbrains",
 	Short: "JetBrains Command-Line Tool.",
-	Long:  `The command line tool for downloading the latest version of JetBrains software.`,
+	Long:  `This command helps you get the download links of the latest version of Jetbrains software.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
-	// Run: func(cmd *cobra.Command, args []string) { },
+	Run: func(cmd *cobra.Command, args []string) {
+		lsCmd.Run(nil, args)
+	},
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
