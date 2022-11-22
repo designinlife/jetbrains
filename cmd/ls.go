@@ -118,7 +118,7 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 			"GO": "Goland", "IIU": "IntelliJ IDEA", "PS": "PhpStorm", "PCP": "PyCharm", "RD": "Rider",
 			"RM": "RubyMine", "WS": "WebStorm", "FL": "Fleet"}
 
-		codes := make([]string, len(names))
+		var codes []string
 
 		for k := range names {
 			codes = append(codes, k)
