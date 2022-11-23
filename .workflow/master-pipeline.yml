@@ -14,11 +14,11 @@ stages:
         # 构建命令
         commands: |
           mkdir output
-          GOPROXY="https://goproxy.cn,direct" GOOS=linux GOARCH=amd64 go build -o output/main.amd64 main.go
-          GOPROXY="https://goproxy.cn,direct" GOOS=linux GOARCH=386 go build -o output/main.linux32 main.go
-          GOPROXY="https://goproxy.cn,direct" GOOS=windows GOARCH=amd64 go build -o output/main.win64.exe main.go
-          GOPROXY="https://goproxy.cn,direct" GOOS=windows GOARCH=386 go build -o output/main.win32.exe main.go
-          GOPROXY="https://goproxy.cn,direct" GOOS=darwin GOARCH=amd64 go build -o output/main.darwin main.go 
+          GOOS=linux GOARCH=amd64 go build -o output/main.amd64 main.go
+          GOOS=linux GOARCH=386 go build -o output/main.linux32 main.go
+          GOOS=windows GOARCH=amd64 go build -o output/main.win64.exe main.go
+          GOOS=windows GOARCH=386 go build -o output/main.win32.exe main.go
+          GOOS=darwin GOARCH=amd64 go build -o output/main.darwin main.go 
           chmod +X output/main.linux32
           ./output/main.linux32
         # 非必填字段，开启后表示将构建产物暂存，但不会上传到制品库中，24小时后自动清除
