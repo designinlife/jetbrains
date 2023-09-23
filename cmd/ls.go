@@ -116,7 +116,7 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 	Run: func(cmd *cobra.Command, args []string) {
 		names := map[string]string{"AC": "AppCode", "CL": "CLion", "RSU": "ReSharper Ultimate", "DG": "DataGrip",
 			"GO": "Goland", "IIU": "IntelliJ IDEA", "PS": "PhpStorm", "PCP": "PyCharm", "RD": "Rider",
-			"RM": "RubyMine", "WS": "WebStorm", "FL": "Fleet"}
+			"RM": "RubyMine", "WS": "WebStorm", "FL": "Fleet", "RR": "RustRover", "DS": "DataSpell"}
 
 		var codes []string
 
