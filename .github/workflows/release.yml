@@ -24,6 +24,7 @@ jobs:
     - uses: wangyoucao577/go-release-action@v1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        goversion: 1.16
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
         ldflags: -s -w
