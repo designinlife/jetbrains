@@ -33,7 +33,6 @@ jobs:
       matrix:
         os:
           - linux
-          - windows
         arch:
           - amd64
           - arm64
