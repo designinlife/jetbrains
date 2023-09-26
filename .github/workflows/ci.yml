@@ -39,6 +39,8 @@ jobs:
           NAME: jetbrains
           BINDIR: bin
         run: |
+          sudo apt update && sudo apt install -y upx-ucl
+          upx -V
           make -j releases
 
       - name: Release
