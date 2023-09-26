@@ -1,0 +1,35 @@
+name: Main
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '^1.21.1'
+
+      - name: Check Go version
+        run: go version
+
+      - name: Build
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          NAME: jetbrains
+          BINDIR: bin
+        run: make -j releases
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: bin/*
+          draft: true
