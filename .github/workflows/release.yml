@@ -32,4 +32,4 @@ jobs:
         # executable_compression: upx
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
-        ldflags: -X 'github.com/designinlife/jetbrains/common.Version=${{ github.event.release.tag_name }}' -X 'github.com/designinlife/jetbrains/common.BuiltOn=${{ env.BUILD_TIME }}' -s -w -extldflags='static'
+        ldflags: -X 'github.com/designinlife/jetbrains/common.Version=${{ github.event.release.tag_name }}' -X 'github.com/designinlife/jetbrains/common.BuiltOn=${{ env.BUILD_TIME }}' -s -w
