@@ -20,7 +20,7 @@ jobs:
         goos: [linux, windows]
         goarch: [amd64]
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set BUILD_TIME env
       run: echo BUILD_TIME=$(date +'%Y-%m-%d %H:%M:%S') >> ${GITHUB_ENV}
