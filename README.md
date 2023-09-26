@@ -1,5 +1,7 @@
 # 获取 Jetbrains 最新版下载地址 CLI 工具
 
+![GitHub CI](https://github.com/designinlife/jetbrains/actions/workflows/release.yml/badge.svg)
+![GitHub go.mod Go version (branch & subdirectory of monorepo)](https://img.shields.io/github/go-mod/go-version/designinlife/jetbrains/master)
 ![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/designinlife/jetbrains)
 ![GitHub all releases](https://img.shields.io/github/downloads/designinlife/jetbrains/total)
 ![GitHub release (latest by SemVer including pre-releases)](https://img.shields.io/github/downloads-pre/designinlife/jetbrains/v1.1.0/total)
