@@ -2,8 +2,8 @@ package cmd
 
 import (
 	"fmt"
-	"gitee.com/codexplus/jetbrains/common"
-	"github.com/imroc/req"
+	"github.com/designinlife/jetbrains/common"
+	"github.com/go-resty/resty/v2"
 	"github.com/olekukonko/tablewriter"
 	"github.com/spf13/cobra"
 	"os"
@@ -124,24 +124,24 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 			codes = append(codes, k)
 		}
 
-		param := req.Param{
+		params := map[string]string{
 			"code":   strings.Join(codes, ","),
 			"latest": "true",
 			"type":   "release",
 		}
 
-		resp, err := req.Get(JetbrainsApiBaseUrl, param)
+		apiResult := ApiDataSet{}
+
+		client := resty.New()
+
+		resp, err := client.R().SetQueryParams(params).SetResult(&apiResult).Get(JetbrainsApiBaseUrl)
 
 		if err != nil {
 			panic(err)
 		}
-
-		apiResult := ApiDataSet{}
-
-		err = resp.ToJSON(&apiResult)
-
-		if err != nil {
-			panic(err)
+		if resp.StatusCode() != 200 {
+			fmt.Fprintln(os.Stderr, fmt.Sprintf("HTTP status code is not 200. (StatusCode: %d)", resp.StatusCode()))
+			os.Exit(1)
 		}
 
 		windowsLinks := make([]string, 0)
