@@ -38,7 +38,11 @@ jobs:
         env:
           NAME: jetbrains
           BINDIR: bin
-        run: make -j releases
+        run: |
+          curl -sSf -o upx-4.1.0-amd64_linux.tar.xz https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-amd64_linux.tar.xz
+          tar xf upx-4.1.0-amd64_linux.tar.xz
+          cp upx-4.1.0-amd64_linux/upx /usr/bin/upx
+          make -j releases
 
       - name: Release
         uses: softprops/action-gh-release@v1

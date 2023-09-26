@@ -54,9 +54,11 @@ linux-386:
 
 linux-amd64:
 	GOARCH=amd64 GOOS=linux $(GOBUILD) -o $(BINDIR)/$(NAME)-$@
+	@upx $(BINDIR)/$(NAME)-$@
 
 linux-amd64-v3:
 	GOARCH=amd64 GOOS=linux GOAMD64=v3 $(GOBUILD) -o $(BINDIR)/$(NAME)-$@
+	@upx $(BINDIR)/$(NAME)-$@
 
 linux-armv5:
 	GOARCH=arm GOOS=linux GOARM=5 $(GOBUILD) -o $(BINDIR)/$(NAME)-$@
