@@ -17,8 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        goos: [linux, windows, darwin]
-        goarch: [amd64, arm64]
+        goos: [linux, windows]
+        goarch: [amd64]
     steps:
     - uses: actions/checkout@v3
 
@@ -29,7 +29,9 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goversion: "1.21.1"
-        # executable_compression: upx
+        md5sum: false
+        executable_compression: upx
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
-        ldflags: -X 'github.com/designinlife/jetbrains/common.Version=${{ github.event.release.tag_name }}' -X 'github.com/designinlife/jetbrains/common.BuiltOn=${{ env.BUILD_TIME }}' -s -w
+        pre_command: export CGO_ENABLED=0
+        ldflags: -X 'github.com/designinlife/jetbrains/common.Version=${{ github.event.release.tag_name }}' -X 'github.com/designinlife/jetbrains/common.BuiltOn=${{ env.BUILD_TIME }}' -s -w -extldflags -static
