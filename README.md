@@ -15,59 +15,67 @@ make release
 ## 使用方法
 
 ```bash
-jetbrains ls
+jetbrains
 ```
 
 ## 最新下载地址
 
 | NAME               |     SIZE | VERSION  | RELEASE DATE |
 | :----------------- | -------: | :------- | :----------: |
-| PhpStorm           | 416.4 MB | 2021.1.1 |  2021-04-16  |
-| Rider              | 741.2 MB | 2021.1.1 |  2021-04-10  |
-| ReSharper Ultimate |   1.1 GB | 2021.1.1 |  2021-04-10  |
-| Goland             | 432.5 MB | 2021.1   |  2021-04-08  |
-| PyCharm            | 466.5 MB | 2021.1   |  2021-04-07  |
-| RubyMine           | 399.3 MB | 2021.1   |  2021-04-07  |
-| CLion              | 550.6 MB | 2021.1   |  2021-04-07  |
-| IntelliJ IDEA      | 764.2 MB | 2021.1   |  2021-04-07  |
-| WebStorm           | 396.0 MB | 2021.1   |  2021-04-06  |
-| DataGrip           | 401.3 MB | 2021.1   |  2021-04-01  |
-| AppCode            |   1.5 GB | 2020.3.4 |  2021-03-16  |
+| PhpStorm           | 471.2 MB | 2023.2.2  |  2023-09-19  |
+| TeamCity           |   2.1 GB | 2023.05.4 |  2023-09-18  |
+| WebStorm           | 436.4 MB | 2023.2.2  |  2023-09-15  |
+| Goland             | 499.5 MB | 2023.2.2  |  2023-09-14  |
+| DataSpell          | 622.9 MB | 2023.2.2  |  2023-09-14  |
+| RubyMine           | 452.8 MB | 2023.2.2  |  2023-09-14  |
+| IntelliJ IDEA      | 811.1 MB | 2023.2.2  |  2023-09-13  |
+| CLion              | 749.3 MB | 2023.2.2  |  2023-09-13  |
+| Rider              | 891.4 MB | 2023.2.1  |  2023-08-24  |
+| ReSharper Ultimate |   1.6 GB | 2023.2.1  |  2023-08-24  |
+| PyCharm            | 542.6 MB | 2023.2.1  |  2023-08-24  |
+| DataGrip           | 448.2 MB | 2023.2.1  |  2023-08-17  |
+| AppCode            |   2.0 GB | 2023.1.4  |  2023-07-17  |
 
 ### Link for `Windows`
 
-- <https://download-cf.jetbrains.com/ruby/RubyMine-2021.1.exe>
-- <https://download-cf.jetbrains.com/python/pycharm-professional-2021.1.exe>
-- <https://download-cf.jetbrains.com/idea/ideaIU-2021.1.exe>
-- <https://download-cf.jetbrains.com/datagrip/datagrip-2021.1.exe>
-- <https://download-cf.jetbrains.com/resharper/dotUltimate.2021.1.1/JetBrains.dotUltimate.2021.1.1.exe>
-- <https://download-cf.jetbrains.com/go/goland-2021.1.exe>
-- <https://download-cf.jetbrains.com/cpp/CLion-2021.1.exe>
-- <https://download-cf.jetbrains.com/webstorm/WebStorm-2021.1.exe>
-- <https://download-cf.jetbrains.com/rider/JetBrains.Rider-2021.1.1.exe>
-- <https://download-cf.jetbrains.com/webide/PhpStorm-2021.1.1.exe>
+- <https://download-cf.jetbrains.com/webide/PhpStorm-2023.2.2.exe>
+- <https://download-cf.jetbrains.com/go/goland-2023.2.2.exe>
+- <https://download-cf.jetbrains.com/rider/JetBrains.Rider-2023.2.1.exe>
+- <https://download-cf.jetbrains.com/cpp/CLion-2023.2.2.exe>
+- <https://download-cf.jetbrains.com/python/dataspell-2023.2.2.exe>
+- <https://download-cf.jetbrains.com/ruby/RubyMine-2023.2.2.exe>
+- <https://download-cf.jetbrains.com/datagrip/datagrip-2023.2.1.exe>
+- <https://download-cf.jetbrains.com/teamcity/TeamCity-2023.05.4.exe>
+- <https://download-cf.jetbrains.com/idea/ideaIU-2023.2.2.exe>
+- <https://download-cf.jetbrains.com/webstorm/WebStorm-2023.2.2.exe>
+- <https://download-cf.jetbrains.com/resharper/dotUltimate.2023.2.1/JetBrains.dotUltimate.2023.2.1.exe>
+- <https://download-cf.jetbrains.com/python/pycharm-professional-2023.2.1.exe>
 
 ### Link for `Linux`
 
-- <https://download-cf.jetbrains.com/ruby/RubyMine-2021.1.tar.gz>
-- <https://download-cf.jetbrains.com/python/pycharm-professional-2021.1.tar.gz>
-- <https://download-cf.jetbrains.com/idea/ideaIU-2021.1.tar.gz>
-- <https://download-cf.jetbrains.com/datagrip/datagrip-2021.1.tar.gz>
-- <https://download-cf.jetbrains.com/go/goland-2021.1.tar.gz>
-- <https://download-cf.jetbrains.com/cpp/CLion-2021.1.tar.gz>
-- <https://download-cf.jetbrains.com/webstorm/WebStorm-2021.1.tar.gz>
-- <https://download-cf.jetbrains.com/rider/JetBrains.Rider-2021.1.1.tar.gz>
-- <https://download-cf.jetbrains.com/webide/PhpStorm-2021.1.1.tar.gz>
+- <https://download-cf.jetbrains.com/webide/PhpStorm-2023.2.2.tar.gz>
+- <https://download-cf.jetbrains.com/go/goland-2023.2.2.tar.gz>
+- <https://download-cf.jetbrains.com/rider/JetBrains.Rider-2023.2.1.tar.gz>
+- <https://download-cf.jetbrains.com/cpp/CLion-2023.2.2.tar.gz>
+- <https://download-cf.jetbrains.com/python/dataspell-2023.2.2.tar.gz>
+- <https://download-cf.jetbrains.com/ruby/RubyMine-2023.2.2.tar.gz>
+- <https://download-cf.jetbrains.com/datagrip/datagrip-2023.2.1.tar.gz>
+- <https://download-cf.jetbrains.com/teamcity/TeamCity-2023.05.4.tar.gz>
+- <https://download-cf.jetbrains.com/idea/ideaIU-2023.2.2.tar.gz>
+- <https://download-cf.jetbrains.com/webstorm/WebStorm-2023.2.2.tar.gz>
+- <https://download-cf.jetbrains.com/python/pycharm-professional-2023.2.1.tar.gz>
 
 ### Link for `Mac`
 
-- <https://download-cf.jetbrains.com/ruby/RubyMine-2021.1.dmg>
-- <https://download-cf.jetbrains.com/python/pycharm-professional-2021.1.dmg>
-- <https://download-cf.jetbrains.com/objc/AppCode-2020.3.4.dmg>
-- <https://download-cf.jetbrains.com/idea/ideaIU-2021.1.dmg>
-- <https://download-cf.jetbrains.com/datagrip/datagrip-2021.1.dmg>
-- <https://download-cf.jetbrains.com/go/goland-2021.1.dmg>
-- <https://download-cf.jetbrains.com/cpp/CLion-2021.1.dmg>
-- <https://download-cf.jetbrains.com/webstorm/WebStorm-2021.1.dmg>
-- <https://download-cf.jetbrains.com/rider/JetBrains.Rider-2021.1.1.dmg>
-- <https://download-cf.jetbrains.com/webide/PhpStorm-2021.1.1.dmg>
+- <https://download-cf.jetbrains.com/webide/PhpStorm-2023.2.2.dmg>
+- <https://download-cf.jetbrains.com/go/goland-2023.2.2.dmg>
+- <https://download-cf.jetbrains.com/rider/JetBrains.Rider-2023.2.1.dmg>
+- <https://download-cf.jetbrains.com/cpp/CLion-2023.2.2.dmg>
+- <https://download-cf.jetbrains.com/python/dataspell-2023.2.2.dmg>
+- <https://download-cf.jetbrains.com/ruby/RubyMine-2023.2.2.dmg>
+- <https://download-cf.jetbrains.com/objc/AppCode-2023.1.4.dmg>
+- <https://download-cf.jetbrains.com/datagrip/datagrip-2023.2.1.dmg>
+- <https://download-cf.jetbrains.com/teamcity/TeamCity-2023.05.4.tar.gz>
+- <https://download-cf.jetbrains.com/idea/ideaIU-2023.2.2.dmg>
+- <https://download-cf.jetbrains.com/webstorm/WebStorm-2023.2.2.dmg>
+- <https://download-cf.jetbrains.com/python/pycharm-professional-2023.2.1.dmg>
