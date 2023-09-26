@@ -21,10 +21,14 @@ jobs:
         goarch: [amd64, arm64]
     steps:
     - uses: actions/checkout@v3
+
+    - name: Set BUILD_TIME env
+      run: echo BUILD_TIME=$(date +'%Y-%m-%d %H:%M:%S') >> ${GITHUB_ENV}
+
     - uses: wangyoucao577/go-release-action@v1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goversion: "1.21.1"
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
-        ldflags: -s -w
+        ldflags: -X 'github.com/designinlife/jetbrains/common.Version=${{ github.event.release.tag_name }}' -X 'github.com/designinlife/jetbrains/common.BuiltOn=${{ env.BUILD_TIME }}' -s -w -extldflags='static'
