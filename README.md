@@ -1,9 +1,9 @@
 # 获取 Jetbrains 最新版下载地址 CLI 工具
 
-![GitHub CI](https://github.com/designinlife/jetbrains/actions/workflows/release.yml/badge.svg)
+![GitHub CI](https://github.com/designinlife/jetbrains/actions/workflows/ci.yml/badge.svg)
 ![GitHub go.mod Go version (branch & subdirectory of monorepo)](https://img.shields.io/github/go-mod/go-version/designinlife/jetbrains/master)
 ![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/designinlife/jetbrains)
-![GitHub release (latest by SemVer)](https://img.shields.io/github/downloads/designinlife/jetbrains/v1.1.2/total)
+![GitHub release (latest by SemVer)](https://img.shields.io/github/downloads/designinlife/jetbrains/v1.1.3/total)
 ![GitHub all releases](https://img.shields.io/github/downloads/designinlife/jetbrains/total)
 
 ## 编译二进制
@@ -20,8 +20,8 @@ jetbrains
 
 ## 最新下载地址
 
-| NAME               |     SIZE | VERSION  | RELEASE DATE |
-| :----------------- | -------: | :------- | :----------: |
+| NAME               |     SIZE | VERSION   | RELEASE DATE |
+| :----------------- | -------: | :-------- | :----------: |
 | PhpStorm           | 471.2 MB | 2023.2.2  |  2023-09-19  |
 | TeamCity           |   2.1 GB | 2023.05.4 |  2023-09-18  |
 | WebStorm           | 436.4 MB | 2023.2.2  |  2023-09-15  |
