@@ -35,7 +35,8 @@ jobs:
         with:
           version: latest
           files: |
-            bin/*
+            bin/*linux-amd64*
+            bin/*windows-amd64*
           args: -fq
 
       - name: Release
