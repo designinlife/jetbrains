@@ -1,6 +1,7 @@
 name: 'Generate README.md'
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "*/5 * * * *"
 
@@ -22,16 +23,17 @@ jobs:
       - name: Check Go version
         run: go version
 
-      - name: 'Get Previous tag'
-        id: previoustag
-        uses: "WyriHaximus/github-action-get-previous-tag@v1"
+      - name: 'Get Latest Tag'
+        id: get-latest-tag
+        uses: actions-ecosystem/action-get-latest-tag@v1
         with:
-          fallback: 1.0.0
-          prefix: v
+          initial_version: v1.1.6
+          with_initial_version: true
+          semver_only: true
 
       - name: Generate README
         run: |
-          go build -o bin/jetbrains -gcflags="all=-N -l" -ldflags '-X "github.com/designinlife/jetbrains/common.Version=${{ steps.previoustag.outputs.tag }}" -w -s -extldflags="static"' .
+          go build -o bin/jetbrains -gcflags="all=-N -l" -ldflags '-X "github.com/designinlife/jetbrains/common.Version=${{ steps.get-latest-tag.outputs.tag }}" -w -s -extldflags="static"' .
           ./bin/jetbrains ls --readme >README.md
           cat README.md
 
