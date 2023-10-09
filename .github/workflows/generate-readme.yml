@@ -1,0 +1,42 @@
+name: 'Generate README.md'
+
+on:
+  schedule:
+    - cron: '40 14 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '^1.21.2'
+
+      - name: Check Go version
+        run: go version
+
+      - name: 'Get Previous tag'
+        id: previoustag
+        uses: "WyriHaximus/github-action-get-previous-tag@v1"
+        with:
+          fallback: 1.0.0
+
+      - name: Generate README
+        run: |
+          go build -o bin/jetbrains -gcflags="all=-N -l" -ldflags '-X "github.com/designinlife/jetbrains/common.Version=${{ steps.previoustag.outputs.tag }}" -w -s -extldflags="static"' .
+          ./bin/jetbrains ls --readme >README.md
+          cat README.md
+
+      - name: Commit README
+        uses: EndBug/add-and-commit@v9
+        with:
+          fetch: false
+          message: 'Update README.md'
+          add: 'README.md'

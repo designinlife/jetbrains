@@ -39,27 +39,3 @@ jobs:
         with:
           files: bin/*
           draft: false
-
-      - name: Checkout Main Branch
-        uses: actions/checkout@v4
-        with:
-          ref: '${{ github.event.repository.default_branch }}'
-
-      - name: 'Get Previous tag'
-        id: previoustag
-        uses: "WyriHaximus/github-action-get-previous-tag@v1"
-        with:
-          fallback: 1.0.0
-
-      - name: Generate Readme
-        run: |
-          go build -o bin/jetbrains -gcflags="all=-N -l" -ldflags '-X "github.com/designinlife/jetbrains/common.Version=${{ steps.previoustag.outputs.tag }}" -w -s -extldflags="static"' .
-          ./bin/jetbrains ls --readme >README.md
-          cat README.md
-
-      - name: Commit Readme
-        uses: EndBug/add-and-commit@v9
-        with:
-          fetch: false
-          message: 'Update README.md'
-          add: 'README.md'
