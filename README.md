@@ -4,10 +4,10 @@
 ![GitHub go.mod Go version (branch & subdirectory of monorepo)](https://img.shields.io/github/go-mod/go-version/designinlife/jetbrains/master)
 ![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/designinlife/jetbrains)
 ![GitHub release (with filter)](https://img.shields.io/github/v/release/designinlife/jetbrains)
-![GitHub release (latest by SemVer)](https://img.shields.io/github/downloads/designinlife/jetbrains/v1.1.6/total)
+![GitHub release (latest by SemVer)](https://img.shields.io/github/downloads/designinlife/jetbrains/1.0.0/total)
 ![GitHub all releases](https://img.shields.io/github/downloads/designinlife/jetbrains/total)
 
-## 编译二进制
+## 编译构建
 
 ```bash
 make release
@@ -23,60 +23,60 @@ jetbrains
 
 | NAME | SIZE | VERSION | RELEASE DATE |
 | :-- | --: | :-- | :--: |
-| AppCode | 2.0 GB | 2023.1.4 | 2023-07-17 |
-| Goland | 499.5 MB | 2023.2.2 | 2023-09-14 |
-| TeamCity | 2.1 GB | 2023.05.4 | 2023-09-18 |
-| DataGrip | 445.8 MB | 2023.2.2 | 2023-10-05 |
-| PyCharm | 546.2 MB | 2023.2.2 | 2023-10-02 |
-| WebStorm | 436.4 MB | 2023.2.2 | 2023-09-15 |
-| RubyMine | 452.8 MB | 2023.2.2 | 2023-09-14 |
 | PhpStorm | 471.2 MB | 2023.2.2 | 2023-09-19 |
+| Goland | 499.5 MB | 2023.2.2 | 2023-09-14 |
 | CLion | 749.3 MB | 2023.2.2 | 2023-09-13 |
+| AppCode | 2.0 GB | 2023.1.4 | 2023-07-17 |
+| IntelliJ IDEA | 811.1 MB | 2023.2.2 | 2023-09-13 |
+| TeamCity | 2.1 GB | 2023.05.4 | 2023-09-18 |
+| ReSharper Ultimate | 1.6 GB | 2023.2.2 | 2023-09-26 |
+| WebStorm | 436.4 MB | 2023.2.2 | 2023-09-15 |
+| PyCharm | 546.2 MB | 2023.2.2 | 2023-10-02 |
+| DataGrip | 445.8 MB | 2023.2.2 | 2023-10-05 |
 | DataSpell | 622.9 MB | 2023.2.2 | 2023-09-14 |
 | Rider | 894.1 MB | 2023.2.2 | 2023-09-26 |
-| IntelliJ IDEA | 811.1 MB | 2023.2.2 | 2023-09-13 |
-| ReSharper Ultimate | 1.6 GB | 2023.2.2 | 2023-09-26 |
+| RubyMine | 452.8 MB | 2023.2.2 | 2023-09-14 |
 
 ### Link for `Windows`
 
-* <https://download-cf.jetbrains.com/go/goland-2023.2.2.exe>
-* <https://download-cf.jetbrains.com/teamcity/TeamCity-2023.05.4.exe>
-* <https://download-cf.jetbrains.com/datagrip/datagrip-2023.2.2.exe>
-* <https://download-cf.jetbrains.com/python/pycharm-professional-2023.2.2.exe>
-* <https://download-cf.jetbrains.com/webstorm/WebStorm-2023.2.2.exe>
-* <https://download-cf.jetbrains.com/ruby/RubyMine-2023.2.2.exe>
 * <https://download-cf.jetbrains.com/webide/PhpStorm-2023.2.2.exe>
+* <https://download-cf.jetbrains.com/go/goland-2023.2.2.exe>
 * <https://download-cf.jetbrains.com/cpp/CLion-2023.2.2.exe>
+* <https://download-cf.jetbrains.com/idea/ideaIU-2023.2.2.exe>
+* <https://download-cf.jetbrains.com/teamcity/TeamCity-2023.05.4.exe>
+* <https://download-cf.jetbrains.com/resharper/dotUltimate.2023.2.2/JetBrains.dotUltimate.2023.2.2.exe>
+* <https://download-cf.jetbrains.com/webstorm/WebStorm-2023.2.2.exe>
+* <https://download-cf.jetbrains.com/python/pycharm-professional-2023.2.2.exe>
+* <https://download-cf.jetbrains.com/datagrip/datagrip-2023.2.2.exe>
 * <https://download-cf.jetbrains.com/python/dataspell-2023.2.2.exe>
 * <https://download-cf.jetbrains.com/rider/JetBrains.Rider-2023.2.2.exe>
-* <https://download-cf.jetbrains.com/idea/ideaIU-2023.2.2.exe>
-* <https://download-cf.jetbrains.com/resharper/dotUltimate.2023.2.2/JetBrains.dotUltimate.2023.2.2.exe>
+* <https://download-cf.jetbrains.com/ruby/RubyMine-2023.2.2.exe>
 
 ### Link for `Linux`
 
-* <https://download-cf.jetbrains.com/go/goland-2023.2.2.tar.gz>
-* <https://download-cf.jetbrains.com/teamcity/TeamCity-2023.05.4.tar.gz>
-* <https://download-cf.jetbrains.com/datagrip/datagrip-2023.2.2.tar.gz>
-* <https://download-cf.jetbrains.com/python/pycharm-professional-2023.2.2.tar.gz>
-* <https://download-cf.jetbrains.com/webstorm/WebStorm-2023.2.2.tar.gz>
-* <https://download-cf.jetbrains.com/ruby/RubyMine-2023.2.2.tar.gz>
 * <https://download-cf.jetbrains.com/webide/PhpStorm-2023.2.2.tar.gz>
+* <https://download-cf.jetbrains.com/go/goland-2023.2.2.tar.gz>
 * <https://download-cf.jetbrains.com/cpp/CLion-2023.2.2.tar.gz>
+* <https://download-cf.jetbrains.com/idea/ideaIU-2023.2.2.tar.gz>
+* <https://download-cf.jetbrains.com/teamcity/TeamCity-2023.05.4.tar.gz>
+* <https://download-cf.jetbrains.com/webstorm/WebStorm-2023.2.2.tar.gz>
+* <https://download-cf.jetbrains.com/python/pycharm-professional-2023.2.2.tar.gz>
+* <https://download-cf.jetbrains.com/datagrip/datagrip-2023.2.2.tar.gz>
 * <https://download-cf.jetbrains.com/python/dataspell-2023.2.2.tar.gz>
 * <https://download-cf.jetbrains.com/rider/JetBrains.Rider-2023.2.2.tar.gz>
-* <https://download-cf.jetbrains.com/idea/ideaIU-2023.2.2.tar.gz>
+* <https://download-cf.jetbrains.com/ruby/RubyMine-2023.2.2.tar.gz>
 
 ### Link for `Mac`
 
-* <https://download-cf.jetbrains.com/objc/AppCode-2023.1.4.dmg>
-* <https://download-cf.jetbrains.com/go/goland-2023.2.2.dmg>
-* <https://download-cf.jetbrains.com/teamcity/TeamCity-2023.05.4.tar.gz>
-* <https://download-cf.jetbrains.com/datagrip/datagrip-2023.2.2.dmg>
-* <https://download-cf.jetbrains.com/python/pycharm-professional-2023.2.2.dmg>
-* <https://download-cf.jetbrains.com/webstorm/WebStorm-2023.2.2.dmg>
-* <https://download-cf.jetbrains.com/ruby/RubyMine-2023.2.2.dmg>
 * <https://download-cf.jetbrains.com/webide/PhpStorm-2023.2.2.dmg>
+* <https://download-cf.jetbrains.com/go/goland-2023.2.2.dmg>
 * <https://download-cf.jetbrains.com/cpp/CLion-2023.2.2.dmg>
+* <https://download-cf.jetbrains.com/objc/AppCode-2023.1.4.dmg>
+* <https://download-cf.jetbrains.com/idea/ideaIU-2023.2.2.dmg>
+* <https://download-cf.jetbrains.com/teamcity/TeamCity-2023.05.4.tar.gz>
+* <https://download-cf.jetbrains.com/webstorm/WebStorm-2023.2.2.dmg>
+* <https://download-cf.jetbrains.com/python/pycharm-professional-2023.2.2.dmg>
+* <https://download-cf.jetbrains.com/datagrip/datagrip-2023.2.2.dmg>
 * <https://download-cf.jetbrains.com/python/dataspell-2023.2.2.dmg>
 * <https://download-cf.jetbrains.com/rider/JetBrains.Rider-2023.2.2.dmg>
-* <https://download-cf.jetbrains.com/idea/ideaIU-2023.2.2.dmg>
+* <https://download-cf.jetbrains.com/ruby/RubyMine-2023.2.2.dmg>
