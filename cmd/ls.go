@@ -215,7 +215,7 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 
 			// 按名称排序
 			slices.SortStableFunc(products, func(a, b JetbrainsProduct) int {
-				return cmp.Compare(a.ReleaseDate, b.ReleaseDate)
+				return cmp.Compare(b.ReleaseDate, a.ReleaseDate)
 			})
 
 			// 渲染模板并输出
