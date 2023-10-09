@@ -2,7 +2,7 @@ name: 'Generate README.md'
 
 on:
   schedule:
-    - cron: '40 14 * * *'
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
