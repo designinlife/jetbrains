@@ -2,6 +2,7 @@ package common
 
 import (
 	"fmt"
+	"os"
 )
 
 func ByteCountSI(b int64) string {
@@ -30,4 +31,19 @@ func ByteCountIEC(b int64) string {
 	}
 	return fmt.Sprintf("%.1f %ciB",
 		float64(b)/float64(div), "KMGTPE"[exp])
+}
+
+// IsFile 检查是否文件？
+func IsFile(filename string) bool {
+	info, err := os.Stat(filename)
+
+	if err != nil {
+		return false
+	}
+
+	if os.IsNotExist(err) {
+		return false
+	}
+
+	return !info.IsDir()
 }

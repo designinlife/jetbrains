@@ -2,13 +2,15 @@ package cmd
 
 import (
 	"fmt"
+	"os"
+	"sort"
+	"strings"
+	"text/template"
+
 	"github.com/designinlife/jetbrains/common"
 	"github.com/go-resty/resty/v2"
 	"github.com/olekukonko/tablewriter"
 	"github.com/spf13/cobra"
-	"os"
-	"sort"
-	"strings"
 )
 
 const (
@@ -107,6 +109,13 @@ func (t tableDataSet) Swap(i, j int) {
 	t[i], t[j] = t[j], t[i]
 }
 
+type JetbrainsProduct struct {
+	Name        string
+	Size        string
+	Version     string
+	ReleaseDate string
+}
+
 // lsCmd represents the ls command
 var lsCmd = &cobra.Command{
 	Use:   "ls",
@@ -114,6 +123,8 @@ var lsCmd = &cobra.Command{
 	Long: `This command will read the latest version number of the software 
 through the Jetbrains HTTP-JSON interface and print the download address of each platform.`,
 	Run: func(cmd *cobra.Command, args []string) {
+		isReadme, _ := cmd.Flags().GetBool("readme")
+
 		names := map[string]string{"AC": "AppCode", "CL": "CLion", "RSU": "ReSharper Ultimate", "DG": "DataGrip",
 			"GO": "Goland", "IIU": "IntelliJ IDEA", "PS": "PhpStorm", "PCP": "PyCharm", "RD": "Rider",
 			"RM": "RubyMine", "WS": "WebStorm", "FL": "Fleet", "RR": "RustRover", "DS": "DataSpell", "QA": "Aqua", "TC": "TeamCity"}
@@ -148,60 +159,124 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 		linuxLinks := make([]string, 0)
 		macLinks := make([]string, 0)
 
-		table := tablewriter.NewWriter(os.Stdout)
-		table.SetHeader([]string{"NAME", "SIZE", "VERSION", "RELEASE DATE"})
-		table.SetAutoWrapText(false)
-		table.SetColumnAlignment([]int{tablewriter.ALIGN_LEFT, tablewriter.ALIGN_RIGHT, tablewriter.ALIGN_LEFT, tablewriter.ALIGN_CENTER})
+		if isReadme {
+			// 打印 README Markdown 格式
+			if !common.IsFile("./README.md.template") {
+				fmt.Fprintln(os.Stderr, fmt.Sprintf("Template file does not exist. (./README.md.template)"))
+				os.Exit(1)
+			}
 
-		var tableData tableDataSet
+			tplContent, err := os.ReadFile("./README.md.template")
+			if err != nil {
+				fmt.Fprintln(os.Stderr, err)
+				os.Exit(2)
+			}
 
-		for key, values := range apiResult {
-			for _, value := range values {
-				if key == "AC" {
-					tableData = append(tableData, []string{names[key], common.ByteCountSI(value.Downloads.Mac.Size), value.Version, value.Date})
-				} else {
-					tableData = append(tableData, []string{names[key], common.ByteCountSI(value.Downloads.Windows.Size), value.Version, value.Date})
-				}
+			tpl := template.New("")
+			tpl, err = tpl.Parse(string(tplContent))
+			if err != nil {
+				fmt.Fprintln(os.Stderr, err)
+				os.Exit(3)
+			}
 
-				if len(value.Downloads.Windows.Link) > 0 {
-					windowsLinks = append(windowsLinks, strings.ReplaceAll(value.Downloads.Windows.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
-				}
-				if len(value.Downloads.Linux.Link) > 0 {
-					linuxLinks = append(linuxLinks, strings.ReplaceAll(value.Downloads.Linux.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
-				}
-				if len(value.Downloads.Mac.Link) > 0 {
-					macLinks = append(macLinks, strings.ReplaceAll(value.Downloads.Mac.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+			var products []JetbrainsProduct
+
+			for key, values := range apiResult {
+				for _, value := range values {
+					if key == "AC" {
+						products = append(products, JetbrainsProduct{
+							Name:        names[key],
+							Size:        common.ByteCountSI(value.Downloads.Mac.Size),
+							Version:     value.Version,
+							ReleaseDate: value.Date,
+						})
+					} else {
+						products = append(products, JetbrainsProduct{
+							Name:        names[key],
+							Size:        common.ByteCountSI(value.Downloads.Windows.Size),
+							Version:     value.Version,
+							ReleaseDate: value.Date,
+						})
+					}
+
+					if len(value.Downloads.Windows.Link) > 0 {
+						windowsLinks = append(windowsLinks, strings.ReplaceAll(value.Downloads.Windows.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+					}
+					if len(value.Downloads.Linux.Link) > 0 {
+						linuxLinks = append(linuxLinks, strings.ReplaceAll(value.Downloads.Linux.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+					}
+					if len(value.Downloads.Mac.Link) > 0 {
+						macLinks = append(macLinks, strings.ReplaceAll(value.Downloads.Mac.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+					}
 				}
 			}
-		}
 
-		sort.Sort(tableData)
+			// 渲染模板并输出
+			if err = tpl.Execute(os.Stdout, map[string]any{
+				"Products":     products,
+				"WindowsLinks": windowsLinks,
+				"LinuxLinks":   linuxLinks,
+				"MacLinks":     macLinks,
+			}); err != nil {
+				fmt.Fprintln(os.Stderr, err)
+				os.Exit(4)
+			}
+		} else {
+			table := tablewriter.NewWriter(os.Stdout)
+			table.SetHeader([]string{"NAME", "SIZE", "VERSION", "RELEASE DATE"})
+			table.SetAutoWrapText(false)
+			table.SetColumnAlignment([]int{tablewriter.ALIGN_LEFT, tablewriter.ALIGN_RIGHT, tablewriter.ALIGN_LEFT, tablewriter.ALIGN_CENTER})
 
-		table.AppendBulk(tableData)
-		table.Render()
+			var tableData tableDataSet
 
-		fmt.Println()
-		fmt.Println("The download link for \033[1;32mWindows\033[0m, follows as:")
-		fmt.Println("------------------------------------------")
+			for key, values := range apiResult {
+				for _, value := range values {
+					if key == "AC" {
+						tableData = append(tableData, []string{names[key], common.ByteCountSI(value.Downloads.Mac.Size), value.Version, value.Date})
+					} else {
+						tableData = append(tableData, []string{names[key], common.ByteCountSI(value.Downloads.Windows.Size), value.Version, value.Date})
+					}
 
-		for _, v1 := range windowsLinks {
-			fmt.Println(v1)
-		}
+					if len(value.Downloads.Windows.Link) > 0 {
+						windowsLinks = append(windowsLinks, strings.ReplaceAll(value.Downloads.Windows.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+					}
+					if len(value.Downloads.Linux.Link) > 0 {
+						linuxLinks = append(linuxLinks, strings.ReplaceAll(value.Downloads.Linux.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+					}
+					if len(value.Downloads.Mac.Link) > 0 {
+						macLinks = append(macLinks, strings.ReplaceAll(value.Downloads.Mac.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+					}
+				}
+			}
 
-		fmt.Println()
-		fmt.Println("The download link for \033[1;32mLinux\033[0m, follows as:")
-		fmt.Println("------------------------------------------")
+			sort.Sort(tableData)
 
-		for _, v1 := range linuxLinks {
-			fmt.Println(v1)
-		}
+			table.AppendBulk(tableData)
+			table.Render()
 
-		fmt.Println()
-		fmt.Println("The download link for \033[1;32mMac\033[0m, follows as:")
-		fmt.Println("------------------------------------------")
+			fmt.Println()
+			fmt.Println("The download link for \033[1;32mWindows\033[0m, follows as:")
+			fmt.Println("------------------------------------------")
 
-		for _, v1 := range macLinks {
-			fmt.Println(v1)
+			for _, v1 := range windowsLinks {
+				fmt.Println(v1)
+			}
+
+			fmt.Println()
+			fmt.Println("The download link for \033[1;32mLinux\033[0m, follows as:")
+			fmt.Println("------------------------------------------")
+
+			for _, v1 := range linuxLinks {
+				fmt.Println(v1)
+			}
+
+			fmt.Println()
+			fmt.Println("The download link for \033[1;32mMac\033[0m, follows as:")
+			fmt.Println("------------------------------------------")
+
+			for _, v1 := range macLinks {
+				fmt.Println(v1)
+			}
 		}
 	},
 }
@@ -211,6 +286,8 @@ func init() {
 
 	// Here you will define your flags and configuration settings.
 	lsCmd.Flags().Bool("help", false, "Show help.")
+
+	lsCmd.Flags().Bool("readme", false, "Print README document?")
 
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
