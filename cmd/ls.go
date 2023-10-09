@@ -1,8 +1,10 @@
 package cmd
 
 import (
+	"cmp"
 	"fmt"
 	"os"
+	"slices"
 	"sort"
 	"strings"
 	"text/template"
@@ -210,6 +212,11 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 					}
 				}
 			}
+
+			// 按名称排序
+			slices.SortStableFunc(products, func(a, b JetbrainsProduct) int {
+				return cmp.Compare(a.ReleaseDate, b.ReleaseDate)
+			})
 
 			// 渲染模板并输出
 			if err = tpl.Execute(os.Stdout, map[string]any{
