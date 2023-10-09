@@ -49,3 +49,19 @@ jobs:
         with:
           files: bin/*
           draft: false
+
+      - name: Generate Readme
+        run: |
+          go build -o bin/jetbrains -gcflags="all=-N -l" -ldflags '-X "github.com/designinlife/jetbrains/common.Version=${{ steps.vars.outputs.tag }}" -w -s -extldflags="static"' .
+          ./bin/jetbrains ls --readme >README.md
+
+      - name: Commit Readme
+        run: |
+          git config --global user.email "no-reply@github.com"
+          git config --global user.name "GitHub Actions"
+          git add README.md
+          git commit -m "Update README.md"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
