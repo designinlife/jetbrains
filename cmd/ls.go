@@ -213,6 +213,7 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 
 			// 渲染模板并输出
 			if err = tpl.Execute(os.Stdout, map[string]any{
+				"Version":      common.Version,
 				"Products":     products,
 				"WindowsLinks": windowsLinks,
 				"LinuxLinks":   linuxLinks,
