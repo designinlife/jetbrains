@@ -2,10 +2,11 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/designinlife/jetbrains/common"
-	"github.com/spf13/cobra"
 	"os"
 	"runtime"
+
+	"github.com/designinlife/jetbrains/common"
+	"github.com/spf13/cobra"
 )
 
 // versionCmd represents the ls command
