@@ -26,16 +26,13 @@ jetbrains
 | {{ .Name }} | {{ .Size }} | {{ .Version }} | {{ .ReleaseDate }} |{{ end }}
 
 ### Link for `Windows`
-
 {{ range .WindowsLinks }}
 * <{{ . }}>{{ end }}
 
 ### Link for `Linux`
-
 {{ range .LinuxLinks }}
 * <{{ . }}>{{ end }}
 
 ### Link for `Mac`
-
 {{ range .MacLinks }}
 * <{{ . }}>{{ end }}
