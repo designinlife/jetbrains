@@ -7,7 +7,7 @@
 ![GitHub release (latest by SemVer)](https://img.shields.io/github/downloads/designinlife/jetbrains/{{ .Version }}/total)
 ![GitHub all releases](https://img.shields.io/github/downloads/designinlife/jetbrains/total)
 
-## 编译二进制
+## 编译构建
 
 ```bash
 make release
