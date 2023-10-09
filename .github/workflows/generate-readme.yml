@@ -27,6 +27,7 @@ jobs:
         uses: "WyriHaximus/github-action-get-previous-tag@v1"
         with:
           fallback: 1.0.0
+          prefix: v
 
       - name: Generate README
         run: |
