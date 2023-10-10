@@ -1,4 +1,4 @@
-# 获取 Jetbrains 最新版下载地址 CLI 工具
+# Get the latest version of Jetbrains download links by this CLI command.
 
 ![GitHub CI](https://github.com/designinlife/jetbrains/actions/workflows/ci.yml/badge.svg)
 ![GitHub go.mod Go version (branch & subdirectory of monorepo)](https://img.shields.io/github/go-mod/go-version/designinlife/jetbrains/master)
@@ -7,19 +7,19 @@
 ![GitHub release (latest by SemVer)](https://img.shields.io/github/downloads/designinlife/jetbrains/{{ .Version }}/total)
 ![GitHub all releases](https://img.shields.io/github/downloads/designinlife/jetbrains/total)
 
-## 编译构建
+## Compile & Release
 
 ```bash
 make release
 ```
 
-## 使用方法
+## Usage
 
 ```bash
 jetbrains
 ```
 
-## 最新下载地址
+## Latest Download Links
 
 | NAME | SIZE | VERSION | RELEASE DATE |
 | :-- | --: | :-- | :--: |{{ range .Products }}
