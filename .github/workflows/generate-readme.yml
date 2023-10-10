@@ -29,9 +29,9 @@ jobs:
 
       - name: Get Latest Tag
         id: get-latest-tag
-        run: |
-          echo "print tag=$(git describe --abbrev=0 --tags --always)"
-          echo "tag=$(git describe --abbrev=0 --tags --always)" >> $GITHUB_OUTPUT
+        uses: ctrlaltdev/latest-release-json-action@latest
+        with:
+          prefixed: true
 
       - name: Generate README
         run: |
