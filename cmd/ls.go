@@ -8,6 +8,7 @@ import (
 	"sort"
 	"strings"
 	"text/template"
+	"time"
 
 	"github.com/designinlife/jetbrains/common"
 	"github.com/go-resty/resty/v2"
@@ -220,11 +221,12 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 
 			// 渲染模板并输出
 			if err = tpl.Execute(os.Stdout, map[string]any{
-				"Version":      common.Version,
-				"Products":     products,
-				"WindowsLinks": windowsLinks,
-				"LinuxLinks":   linuxLinks,
-				"MacLinks":     macLinks,
+				"Version":       common.Version,
+				"GeneratedTime": time.Now().Format("2006-01-02 15:04:05 MST"),
+				"Products":      products,
+				"WindowsLinks":  windowsLinks,
+				"LinuxLinks":    linuxLinks,
+				"MacLinks":      macLinks,
 			}); err != nil {
 				fmt.Fprintln(os.Stderr, err)
 				os.Exit(4)
