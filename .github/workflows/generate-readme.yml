@@ -32,7 +32,7 @@ jobs:
       - name: Get Latest Tag
         id: get-latest-tag
         run: |
-          echo "print tag=$(git describe --abbrev=0 --tags)"
+          echo "TAG: $(git describe --abbrev=0 --tags)"
           echo "tag=$(git describe --abbrev=0 --tags)" >> $GITHUB_OUTPUT
 
       - name: Generate README
