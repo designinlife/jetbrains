@@ -21,6 +21,8 @@ jetbrains
 
 ## Latest Download Links
 
+> Updated At: {{ .GeneratedTime }}
+
 | NAME | SIZE | VERSION | RELEASE DATE |
 | :-- | --: | :-- | :--: |{{ range .Products }}
 | {{ .Name }} | {{ .Size }} | {{ .Version }} | {{ .ReleaseDate }} |{{ end }}
