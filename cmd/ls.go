@@ -130,7 +130,8 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 
 		names := map[string]string{"AC": "AppCode", "CL": "CLion", "RSU": "ReSharper Ultimate", "DG": "DataGrip",
 			"GO": "Goland", "IIU": "IntelliJ IDEA", "PS": "PhpStorm", "PCP": "PyCharm", "RD": "Rider",
-			"RM": "RubyMine", "WS": "WebStorm", "FL": "Fleet", "RR": "RustRover", "DS": "DataSpell", "QA": "Aqua", "TC": "TeamCity"}
+			"RM": "RubyMine", "WS": "WebStorm", "FL": "Fleet", "RR": "RustRover", "DS": "DataSpell", "QA": "Aqua",
+			"TC": "TeamCity", "WRS": "Writerside"}
 
 		var codes []string
 
