@@ -204,13 +204,13 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 					}
 
 					if len(value.Downloads.Windows.Link) > 0 {
-						windowsLinks = append(windowsLinks, strings.ReplaceAll(value.Downloads.Windows.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+						windowsLinks = append(windowsLinks, strings.ReplaceAll(value.Downloads.Windows.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
 					if len(value.Downloads.Linux.Link) > 0 {
-						linuxLinks = append(linuxLinks, strings.ReplaceAll(value.Downloads.Linux.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+						linuxLinks = append(linuxLinks, strings.ReplaceAll(value.Downloads.Linux.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
 					if len(value.Downloads.Mac.Link) > 0 {
-						macLinks = append(macLinks, strings.ReplaceAll(value.Downloads.Mac.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+						macLinks = append(macLinks, strings.ReplaceAll(value.Downloads.Mac.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
 				}
 			}
@@ -249,13 +249,13 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 					}
 
 					if len(value.Downloads.Windows.Link) > 0 {
-						windowsLinks = append(windowsLinks, strings.ReplaceAll(value.Downloads.Windows.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+						windowsLinks = append(windowsLinks, strings.ReplaceAll(value.Downloads.Windows.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
 					if len(value.Downloads.Linux.Link) > 0 {
-						linuxLinks = append(linuxLinks, strings.ReplaceAll(value.Downloads.Linux.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+						linuxLinks = append(linuxLinks, strings.ReplaceAll(value.Downloads.Linux.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
 					if len(value.Downloads.Mac.Link) > 0 {
-						macLinks = append(macLinks, strings.ReplaceAll(value.Downloads.Mac.Link, "download.jetbrains.com", "download-cf.jetbrains.com"))
+						macLinks = append(macLinks, strings.ReplaceAll(value.Downloads.Mac.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
 				}
 			}
