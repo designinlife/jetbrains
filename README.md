@@ -21,7 +21,7 @@ jetbrains
 
 ## Latest Download Links
 
-> Updated At: 2024-04-27 00:31:10 UTC
+> Updated At: 2024-04-27 12:10:21 UTC
 
 | NAME | SIZE | VERSION | RELEASE DATE |
 | :-- | --: | :-- | :--: |
@@ -41,44 +41,44 @@ jetbrains
 
 ### Link for `Windows`
 
-* <https://download-cdn.jetbrains.com/go/goland-2024.1.exe>
-* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2024.03.exe>
-* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.1.1.exe>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2024.1.1.exe>
-* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2024.1.2.exe>
-* <https://download-cdn.jetbrains.com/python/pycharm-professional-2024.1.exe>
 * <https://download-cdn.jetbrains.com/datagrip/datagrip-2024.1.2.exe>
-* <https://download-cdn.jetbrains.com/idea/ideaIU-2024.1.exe>
-* <https://download-cdn.jetbrains.com/resharper/dotUltimate.2024.1.1/JetBrains.dotUltimate.2024.1.1.exe>
-* <https://download-cdn.jetbrains.com/ruby/RubyMine-2024.1.1.exe>
+* <https://download-cdn.jetbrains.com/go/goland-2024.1.exe>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2024.1.1.exe>
 * <https://download-cdn.jetbrains.com/python/dataspell-2024.1.1.exe>
+* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.1.1.exe>
+* <https://download-cdn.jetbrains.com/python/pycharm-professional-2024.1.exe>
+* <https://download-cdn.jetbrains.com/idea/ideaIU-2024.1.exe>
+* <https://download-cdn.jetbrains.com/ruby/RubyMine-2024.1.1.exe>
+* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2024.03.exe>
+* <https://download-cdn.jetbrains.com/resharper/dotUltimate.2024.1.1/JetBrains.dotUltimate.2024.1.1.exe>
+* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2024.1.2.exe>
 * <https://download-cdn.jetbrains.com/webide/PhpStorm-2024.1.1.exe>
 
 ### Link for `Linux`
 
-* <https://download-cdn.jetbrains.com/go/goland-2024.1.tar.gz>
-* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2024.03.tar.gz>
-* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.1.1.tar.gz>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2024.1.1.tar.gz>
-* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2024.1.2.tar.gz>
-* <https://download-cdn.jetbrains.com/python/pycharm-professional-2024.1.tar.gz>
 * <https://download-cdn.jetbrains.com/datagrip/datagrip-2024.1.2.tar.gz>
+* <https://download-cdn.jetbrains.com/go/goland-2024.1.tar.gz>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2024.1.1.tar.gz>
+* <https://download-cdn.jetbrains.com/python/dataspell-2024.1.1.tar.gz>
+* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.1.1.tar.gz>
+* <https://download-cdn.jetbrains.com/python/pycharm-professional-2024.1.tar.gz>
 * <https://download-cdn.jetbrains.com/idea/ideaIU-2024.1.tar.gz>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2024.1.1.tar.gz>
-* <https://download-cdn.jetbrains.com/python/dataspell-2024.1.1.tar.gz>
+* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2024.03.tar.gz>
+* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2024.1.2.tar.gz>
 * <https://download-cdn.jetbrains.com/webide/PhpStorm-2024.1.1.tar.gz>
 
 ### Link for `Mac`
 
-* <https://download-cdn.jetbrains.com/go/goland-2024.1.dmg>
-* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2024.03.tar.gz>
-* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.1.1.dmg>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2024.1.1.dmg>
-* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2024.1.2.dmg>
-* <https://download-cdn.jetbrains.com/python/pycharm-professional-2024.1.dmg>
 * <https://download-cdn.jetbrains.com/datagrip/datagrip-2024.1.2.dmg>
+* <https://download-cdn.jetbrains.com/go/goland-2024.1.dmg>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2024.1.1.dmg>
+* <https://download-cdn.jetbrains.com/python/dataspell-2024.1.1.dmg>
+* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.1.1.dmg>
+* <https://download-cdn.jetbrains.com/python/pycharm-professional-2024.1.dmg>
+* <https://download-cdn.jetbrains.com/objc/AppCode-2023.1.4.dmg>
 * <https://download-cdn.jetbrains.com/idea/ideaIU-2024.1.dmg>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2024.1.1.dmg>
-* <https://download-cdn.jetbrains.com/python/dataspell-2024.1.1.dmg>
-* <https://download-cdn.jetbrains.com/objc/AppCode-2023.1.4.dmg>
+* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2024.03.tar.gz>
+* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2024.1.2.dmg>
 * <https://download-cdn.jetbrains.com/webide/PhpStorm-2024.1.1.dmg>
