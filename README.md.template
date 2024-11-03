@@ -35,6 +35,10 @@ jetbrains
 {{ range .LinuxLinks }}
 * <{{ . }}>{{ end }}
 
-### Link for `Mac`
+### Link for `Mac` (Intel)
 {{ range .MacLinks }}
+* <{{ . }}>{{ end }}
+
+### Link for `Mac` (Apple Silicon)
+{{ range .MacAarchLinks }}
 * <{{ . }}>{{ end }}
