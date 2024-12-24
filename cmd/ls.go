@@ -162,6 +162,7 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 		windowsLinks := make([]string, 0)
 		linuxLinks := make([]string, 0)
 		macLinks := make([]string, 0)
+		macAarchLinks := make([]string, 0)
 
 		if isReadme {
 			// 打印 README Markdown 格式
@@ -212,6 +213,9 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 					if len(value.Downloads.Mac.Link) > 0 {
 						macLinks = append(macLinks, strings.ReplaceAll(value.Downloads.Mac.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
+					if len(value.Downloads.MacM1.Link) > 0 {
+						macAarchLinks = append(macAarchLinks, strings.ReplaceAll(value.Downloads.MacM1.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
+					}
 				}
 			}
 
@@ -228,6 +232,7 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 				"WindowsLinks":  windowsLinks,
 				"LinuxLinks":    linuxLinks,
 				"MacLinks":      macLinks,
+				"MacAarchLinks": macAarchLinks,
 			}); err != nil {
 				fmt.Fprintln(os.Stderr, err)
 				os.Exit(4)
@@ -257,6 +262,9 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 					if len(value.Downloads.Mac.Link) > 0 {
 						macLinks = append(macLinks, strings.ReplaceAll(value.Downloads.Mac.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
+					if len(value.Downloads.MacM1.Link) > 0 {
+						macAarchLinks = append(macAarchLinks, strings.ReplaceAll(value.Downloads.MacM1.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
+					}
 				}
 			}
 
@@ -282,10 +290,18 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 			}
 
 			fmt.Println()
-			fmt.Println("The download link for \033[1;32mMac\033[0m, follows as:")
+			fmt.Println("The download link for \033[1;32mMac\033[0m (Intel), follows as:")
 			fmt.Println("------------------------------------------")
 
 			for _, v1 := range macLinks {
+				fmt.Println(v1)
+			}
+
+			fmt.Println()
+			fmt.Println("The download link for \033[1;32mMac\033[0m (Apple Silicon), follows as:")
+			fmt.Println("------------------------------------------")
+
+			for _, v1 := range macAarchLinks {
 				fmt.Println(v1)
 			}
 		}
