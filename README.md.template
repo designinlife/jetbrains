@@ -31,10 +31,22 @@ jetbrains
 {{ range .WindowsLinks }}
 * <{{ . }}>{{ end }}
 
+### Link for `Windows ARM64`
+{{ range .WindowsARM64Links }}
+* <{{ . }}>{{ end }}
+
 ### Link for `Linux`
 {{ range .LinuxLinks }}
 * <{{ . }}>{{ end }}
 
+### Link for `Linux ARM64`
+{{ range .LinuxARM64Links }}
+* <{{ . }}>{{ end }}
+
 ### Link for `Mac`
 {{ range .MacLinks }}
+* <{{ . }}>{{ end }}
+
+### Link for `Mac M1`
+{{ range .MacM1Links }}
 * <{{ . }}>{{ end }}

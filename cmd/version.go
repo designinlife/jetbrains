@@ -5,8 +5,9 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/designinlife/jetbrains/common"
 	"github.com/spf13/cobra"
+
+	"github.com/designinlife/jetbrains/common"
 )
 
 // versionCmd represents the ls command

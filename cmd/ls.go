@@ -10,50 +10,35 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/designinlife/jetbrains/common"
 	"github.com/go-resty/resty/v2"
 	"github.com/olekukonko/tablewriter"
 	"github.com/spf13/cobra"
+
+	"github.com/designinlife/jetbrains/common"
 )
 
 const (
 	JetbrainsApiBaseUrl = "https://data.services.jetbrains.com/products/releases"
 )
 
+type apiDataLink struct {
+	Link         string `json:"link"`
+	Size         int64  `json:"size"`
+	ChecksumLink string `json:"checksumLink"`
+}
+
 type apiDataItem struct {
 	Date      string `json:"date"`
 	Type      string `json:"type"`
 	Downloads struct {
-		Linux struct {
-			Link         string `json:"link"`
-			Size         int64  `json:"size"`
-			ChecksumLink string `json:"checksumLink"`
-		} `json:"linux"`
-		ThirdPartyLibrariesJson struct {
-			Link         string `json:"link"`
-			Size         int64  `json:"size"`
-			ChecksumLink string `json:"checksumLink"`
-		} `json:"thirdPartyLibrariesJson"`
-		Windows struct {
-			Link         string `json:"link"`
-			Size         int64  `json:"size"`
-			ChecksumLink string `json:"checksumLink"`
-		} `json:"windows"`
-		WindowsZip struct {
-			Link         string `json:"link"`
-			Size         int64  `json:"size"`
-			ChecksumLink string `json:"checksumLink"`
-		} `json:"windowsZip"`
-		Mac struct {
-			Link         string `json:"link"`
-			Size         int64  `json:"size"`
-			ChecksumLink string `json:"checksumLink"`
-		} `json:"mac"`
-		MacM1 struct {
-			Link         string `json:"link"`
-			Size         int64  `json:"size"`
-			ChecksumLink string `json:"checksumLink"`
-		} `json:"macM1"`
+		Linux                   apiDataLink `json:"linux"`
+		LinuxARM64              apiDataLink `json:"linuxARM64"`
+		ThirdPartyLibrariesJson apiDataLink `json:"thirdPartyLibrariesJson"`
+		Windows                 apiDataLink `json:"windows"`
+		WindowsARM64            apiDataLink `json:"windowsARM64"`
+		WindowsZip              apiDataLink `json:"windowsZip"`
+		Mac                     apiDataLink `json:"mac"`
+		MacM1                   apiDataLink `json:"macM1"`
 	} `json:"downloads"`
 	Patches struct {
 		Win []struct {
@@ -159,9 +144,12 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 			os.Exit(1)
 		}
 
-		windowsLinks := make([]string, 0)
-		linuxLinks := make([]string, 0)
-		macLinks := make([]string, 0)
+		windowsLinks := make([]string, 0, 15)
+		windowsArm64Links := make([]string, 0, 15)
+		linuxLinks := make([]string, 0, 15)
+		linuxArm64Links := make([]string, 0, 15)
+		macLinks := make([]string, 0, 15)
+		macM1Links := make([]string, 0, 15)
 
 		if isReadme {
 			// 打印 README Markdown 格式
@@ -206,11 +194,20 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 					if len(value.Downloads.Windows.Link) > 0 {
 						windowsLinks = append(windowsLinks, strings.ReplaceAll(value.Downloads.Windows.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
+					if len(value.Downloads.WindowsARM64.Link) > 0 {
+						windowsArm64Links = append(windowsArm64Links, strings.ReplaceAll(value.Downloads.WindowsARM64.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
+					}
 					if len(value.Downloads.Linux.Link) > 0 {
 						linuxLinks = append(linuxLinks, strings.ReplaceAll(value.Downloads.Linux.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
+					if len(value.Downloads.LinuxARM64.Link) > 0 {
+						linuxArm64Links = append(linuxArm64Links, strings.ReplaceAll(value.Downloads.LinuxARM64.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
+					}
 					if len(value.Downloads.Mac.Link) > 0 {
 						macLinks = append(macLinks, strings.ReplaceAll(value.Downloads.Mac.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
+					}
+					if len(value.Downloads.MacM1.Link) > 0 {
+						macM1Links = append(macM1Links, strings.ReplaceAll(value.Downloads.MacM1.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
 				}
 			}
@@ -222,12 +219,15 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 
 			// 渲染模板并输出
 			if err = tpl.Execute(os.Stdout, map[string]any{
-				"Version":       common.Version,
-				"GeneratedTime": time.Now().Format("2006-01-02 15:04:05 MST"),
-				"Products":      products,
-				"WindowsLinks":  windowsLinks,
-				"LinuxLinks":    linuxLinks,
-				"MacLinks":      macLinks,
+				"Version":           common.Version,
+				"GeneratedTime":     time.Now().Format("2006-01-02 15:04:05 MST"),
+				"Products":          products,
+				"WindowsLinks":      windowsLinks,
+				"WindowsARM64Links": windowsArm64Links,
+				"LinuxLinks":        linuxLinks,
+				"LinuxARM64Links":   linuxArm64Links,
+				"MacLinks":          macLinks,
+				"MacM1Links":        macM1Links,
 			}); err != nil {
 				fmt.Fprintln(os.Stderr, err)
 				os.Exit(4)
