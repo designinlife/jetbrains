@@ -251,11 +251,20 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 					if len(value.Downloads.Windows.Link) > 0 {
 						windowsLinks = append(windowsLinks, strings.ReplaceAll(value.Downloads.Windows.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
+					if len(value.Downloads.WindowsARM64.Link) > 0 {
+						windowsArm64Links = append(windowsArm64Links, strings.ReplaceAll(value.Downloads.WindowsARM64.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
+					}
 					if len(value.Downloads.Linux.Link) > 0 {
 						linuxLinks = append(linuxLinks, strings.ReplaceAll(value.Downloads.Linux.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
+					if len(value.Downloads.LinuxARM64.Link) > 0 {
+						linuxArm64Links = append(linuxArm64Links, strings.ReplaceAll(value.Downloads.LinuxARM64.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
+					}
 					if len(value.Downloads.Mac.Link) > 0 {
 						macLinks = append(macLinks, strings.ReplaceAll(value.Downloads.Mac.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
+					}
+					if len(value.Downloads.MacM1.Link) > 0 {
+						macM1Links = append(macM1Links, strings.ReplaceAll(value.Downloads.MacM1.Link, "download.jetbrains.com", "download-cdn.jetbrains.com"))
 					}
 				}
 			}
@@ -274,6 +283,14 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 			}
 
 			fmt.Println()
+			fmt.Println("The download link for \033[1;32mWindows ARM64\033[0m, follows as:")
+			fmt.Println("------------------------------------------")
+
+			for _, v1 := range windowsArm64Links {
+				fmt.Println(v1)
+			}
+
+			fmt.Println()
 			fmt.Println("The download link for \033[1;32mLinux\033[0m, follows as:")
 			fmt.Println("------------------------------------------")
 
@@ -282,10 +299,26 @@ through the Jetbrains HTTP-JSON interface and print the download address of each
 			}
 
 			fmt.Println()
+			fmt.Println("The download link for \033[1;32mLinux ARM64\033[0m, follows as:")
+			fmt.Println("------------------------------------------")
+
+			for _, v1 := range linuxArm64Links {
+				fmt.Println(v1)
+			}
+
+			fmt.Println()
 			fmt.Println("The download link for \033[1;32mMac\033[0m, follows as:")
 			fmt.Println("------------------------------------------")
 
 			for _, v1 := range macLinks {
+				fmt.Println(v1)
+			}
+
+			fmt.Println()
+			fmt.Println("The download link for \033[1;32mMac M1\033[0m, follows as:")
+			fmt.Println("------------------------------------------")
+
+			for _, v1 := range macM1Links {
 				fmt.Println(v1)
 			}
 		}
