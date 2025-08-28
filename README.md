@@ -21,118 +21,118 @@ jetbrains
 
 ## Latest Download Links
 
-> Updated At: 2025-08-28 00:45:29 UTC
+> Updated At: 2025-08-28 12:18:36 UTC
 
 | NAME | SIZE | VERSION | RELEASE DATE |
 | :-- | --: | :-- | :--: |
 | ReSharper Ultimate | 3.8 GB | 2025.2.0.1 | 2025-08-21 |
 | Rider | 1.7 GB | 2025.2.0.1 | 2025-08-21 |
 | Goland | 979.4 MB | 2025.2.0.1 | 2025-08-18 |
-| TeamCity | 1.4 GB | 2025.07.1 | 2025-08-14 |
 | DataGrip | 948.7 MB | 2025.2.2 | 2025-08-14 |
-| PyCharm | 1.0 GB | 2025.2.0.1 | 2025-08-12 |
+| TeamCity | 1.4 GB | 2025.07.1 | 2025-08-14 |
 | DataSpell | 1.1 GB | 2025.2 | 2025-08-12 |
-| RustRover | 1.1 GB | 2025.2 | 2025-08-05 |
-| CLion | 1.8 GB | 2025.2 | 2025-08-05 |
+| PyCharm | 1.0 GB | 2025.2.0.1 | 2025-08-12 |
 | PhpStorm | 943.8 MB | 2025.2 | 2025-08-05 |
+| CLion | 1.8 GB | 2025.2.1 | 2025-08-05 |
+| RustRover | 1.1 GB | 2025.2 | 2025-08-05 |
+| WebStorm | 991.9 MB | 2025.2 | 2025-08-04 |
 | RubyMine | 925.9 MB | 2025.2 | 2025-08-04 |
 | IntelliJ IDEA | 1.4 GB | 2025.2 | 2025-08-04 |
-| WebStorm | 991.9 MB | 2025.2 | 2025-08-04 |
 | Aqua | 778.1 MB | 2024.3.2 | 2025-01-24 |
 | AppCode | 2.0 GB | 2023.1.5 | 2024-06-12 |
 
 ### Link for `Windows`
 
-* <https://download-cdn.jetbrains.com/go/goland-2025.2.0.1.exe>
+* <https://download-cdn.jetbrains.com/resharper/dotUltimate.2025.2.0.1/JetBrains.dotUltimate.2025.2.0.1.exe>
+* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.2.exe>
+* <https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2.exe>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2025.2.1.exe>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2025.2.exe>
-* <https://download-cdn.jetbrains.com/python/pycharm-2025.2.0.1.exe>
-* <https://download-cdn.jetbrains.com/rustrover/RustRover-2025.2.exe>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2025.2.exe>
-* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2025.07.1.exe>
+* <https://download-cdn.jetbrains.com/python/dataspell-2025.2.exe>
 * <https://download-cdn.jetbrains.com/aqua/aqua-2024.3.2.exe>
 * <https://download-cdn.jetbrains.com/idea/ideaIU-2025.2.exe>
-* <https://download-cdn.jetbrains.com/resharper/dotUltimate.2025.2.0.1/JetBrains.dotUltimate.2025.2.0.1.exe>
-* <https://download-cdn.jetbrains.com/python/dataspell-2025.2.exe>
-* <https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2.exe>
-* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.2.0.1.exe>
-* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.2.exe>
+* <https://download-cdn.jetbrains.com/python/pycharm-2025.2.0.1.exe>
+* <https://download-cdn.jetbrains.com/rustrover/RustRover-2025.2.exe>
 * <https://download-cdn.jetbrains.com/datagrip/datagrip-2025.2.2.exe>
+* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2025.07.1.exe>
+* <https://download-cdn.jetbrains.com/go/goland-2025.2.0.1.exe>
+* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.2.0.1.exe>
 
 ### Link for `Windows ARM64`
 
-* <https://download-cdn.jetbrains.com/go/goland-2025.2.0.1-aarch64.exe>
+* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.2-aarch64.exe>
+* <https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2-aarch64.exe>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2025.2.1-aarch64.exe>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2025.2-aarch64.exe>
-* <https://download-cdn.jetbrains.com/python/pycharm-2025.2.0.1-aarch64.exe>
-* <https://download-cdn.jetbrains.com/rustrover/RustRover-2025.2-aarch64.exe>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2025.2-aarch64.exe>
+* <https://download-cdn.jetbrains.com/python/dataspell-2025.2-aarch64.exe>
 * <https://download-cdn.jetbrains.com/aqua/aqua-2024.3.2-aarch64.exe>
 * <https://download-cdn.jetbrains.com/idea/ideaIU-2025.2-aarch64.exe>
-* <https://download-cdn.jetbrains.com/python/dataspell-2025.2-aarch64.exe>
-* <https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2-aarch64.exe>
-* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.2.0.1-aarch64.exe>
-* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.2-aarch64.exe>
+* <https://download-cdn.jetbrains.com/python/pycharm-2025.2.0.1-aarch64.exe>
+* <https://download-cdn.jetbrains.com/rustrover/RustRover-2025.2-aarch64.exe>
 * <https://download-cdn.jetbrains.com/datagrip/datagrip-2025.2.2-aarch64.exe>
+* <https://download-cdn.jetbrains.com/go/goland-2025.2.0.1-aarch64.exe>
+* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.2.0.1-aarch64.exe>
 
 ### Link for `Linux`
 
-* <https://download-cdn.jetbrains.com/go/goland-2025.2.0.1.tar.gz>
+* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.2.tar.gz>
+* <https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2.tar.gz>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2025.2.1.tar.gz>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2025.2.tar.gz>
-* <https://download-cdn.jetbrains.com/python/pycharm-2025.2.0.1.tar.gz>
-* <https://download-cdn.jetbrains.com/rustrover/RustRover-2025.2.tar.gz>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2025.2.tar.gz>
-* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2025.07.1.tar.gz>
+* <https://download-cdn.jetbrains.com/python/dataspell-2025.2.tar.gz>
 * <https://download-cdn.jetbrains.com/aqua/aqua-2024.3.2.tar.gz>
 * <https://download-cdn.jetbrains.com/idea/ideaIU-2025.2.tar.gz>
-* <https://download-cdn.jetbrains.com/python/dataspell-2025.2.tar.gz>
-* <https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2.tar.gz>
-* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.2.0.1.tar.gz>
-* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.2.tar.gz>
+* <https://download-cdn.jetbrains.com/python/pycharm-2025.2.0.1.tar.gz>
+* <https://download-cdn.jetbrains.com/rustrover/RustRover-2025.2.tar.gz>
 * <https://download-cdn.jetbrains.com/datagrip/datagrip-2025.2.2.tar.gz>
+* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2025.07.1.tar.gz>
+* <https://download-cdn.jetbrains.com/go/goland-2025.2.0.1.tar.gz>
+* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.2.0.1.tar.gz>
 
 ### Link for `Linux ARM64`
 
-* <https://download-cdn.jetbrains.com/go/goland-2025.2.0.1-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.2-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2025.2.1-aarch64.tar.gz>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2025.2-aarch64.tar.gz>
-* <https://download-cdn.jetbrains.com/python/pycharm-2025.2.0.1-aarch64.tar.gz>
-* <https://download-cdn.jetbrains.com/rustrover/RustRover-2025.2-aarch64.tar.gz>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2025.2-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/python/dataspell-2025.2-aarch64.tar.gz>
 * <https://download-cdn.jetbrains.com/aqua/aqua-2024.3.2-aarch64.tar.gz>
 * <https://download-cdn.jetbrains.com/idea/ideaIU-2025.2-aarch64.tar.gz>
-* <https://download-cdn.jetbrains.com/python/dataspell-2025.2-aarch64.tar.gz>
-* <https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2-aarch64.tar.gz>
-* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.2.0.1-aarch64.tar.gz>
-* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.2-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/python/pycharm-2025.2.0.1-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/rustrover/RustRover-2025.2-aarch64.tar.gz>
 * <https://download-cdn.jetbrains.com/datagrip/datagrip-2025.2.2-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/go/goland-2025.2.0.1-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.2.0.1-aarch64.tar.gz>
 
 ### Link for `Mac`
 
-* <https://download-cdn.jetbrains.com/go/goland-2025.2.0.1.dmg>
+* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.2.dmg>
+* <https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2.dmg>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2025.2.1.dmg>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2025.2.dmg>
-* <https://download-cdn.jetbrains.com/python/pycharm-2025.2.0.1.dmg>
-* <https://download-cdn.jetbrains.com/rustrover/RustRover-2025.2.dmg>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2025.2.dmg>
-* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2025.07.1.tar.gz>
+* <https://download-cdn.jetbrains.com/python/dataspell-2025.2.dmg>
 * <https://download-cdn.jetbrains.com/aqua/aqua-2024.3.2.dmg>
 * <https://download-cdn.jetbrains.com/idea/ideaIU-2025.2.dmg>
-* <https://download-cdn.jetbrains.com/python/dataspell-2025.2.dmg>
+* <https://download-cdn.jetbrains.com/python/pycharm-2025.2.0.1.dmg>
+* <https://download-cdn.jetbrains.com/rustrover/RustRover-2025.2.dmg>
 * <https://download-cdn.jetbrains.com/objc/AppCode-2023.1.5.dmg>
-* <https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2.dmg>
-* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.2.0.1.dmg>
-* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.2.dmg>
 * <https://download-cdn.jetbrains.com/datagrip/datagrip-2025.2.2.dmg>
+* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2025.07.1.tar.gz>
+* <https://download-cdn.jetbrains.com/go/goland-2025.2.0.1.dmg>
+* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.2.0.1.dmg>
 
 ### Link for `Mac M1`
 
-* <https://download-cdn.jetbrains.com/go/goland-2025.2.0.1-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.2-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2025.2.1-aarch64.dmg>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2025.2-aarch64.dmg>
-* <https://download-cdn.jetbrains.com/python/pycharm-2025.2.0.1-aarch64.dmg>
-* <https://download-cdn.jetbrains.com/rustrover/RustRover-2025.2-aarch64.dmg>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2025.2-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/python/dataspell-2025.2-aarch64.dmg>
 * <https://download-cdn.jetbrains.com/aqua/aqua-2024.3.2-aarch64.dmg>
 * <https://download-cdn.jetbrains.com/idea/ideaIU-2025.2-aarch64.dmg>
-* <https://download-cdn.jetbrains.com/python/dataspell-2025.2-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/python/pycharm-2025.2.0.1-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/rustrover/RustRover-2025.2-aarch64.dmg>
 * <https://download-cdn.jetbrains.com/objc/AppCode-2023.1.5-aarch64.dmg>
-* <https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2-aarch64.dmg>
-* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.2.0.1-aarch64.dmg>
-* <https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.2-aarch64.dmg>
 * <https://download-cdn.jetbrains.com/datagrip/datagrip-2025.2.2-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/go/goland-2025.2.0.1-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.2.0.1-aarch64.dmg>
