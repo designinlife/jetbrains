@@ -21,111 +21,111 @@ jetbrains
 
 ## Latest Download Links
 
-> Updated At: 2026-07-23 01:43:03 UTC
+> Updated At: 2026-07-23 13:20:20 UTC
 
 | NAME | SIZE | VERSION | RELEASE DATE |
 | :-- | --: | :-- | :--: |
+| CLion | 1.7 GB | 2026.2.0.1 | 2026-07-23 |
+| DataGrip | 844.1 MB | 2026.2.1 | 2026-07-22 |
 | ReSharper Ultimate | 1.8 GB | 2026.2 | 2026-07-22 |
 | RustRover | 1.1 GB | 2026.2 | 2026-07-22 |
 | Rider | 1.9 GB | 2026.2 | 2026-07-22 |
-| DataGrip | 844.1 MB | 2026.2.1 | 2026-07-22 |
 | RubyMine | 801.6 MB | 2026.2 | 2026-07-21 |
 | PyCharm | 947.4 MB | 2026.2 | 2026-07-21 |
 | IntelliJ IDEA | 1.2 GB | 2026.2 | 2026-07-16 |
 | WebStorm | 870.0 MB | 2026.2 | 2026-07-16 |
-| CLion | 1.7 GB | 2026.2 | 2026-07-16 |
-| Goland | 937.1 MB | 2026.2 | 2026-07-16 |
 | PhpStorm | 830.1 MB | 2026.2 | 2026-07-16 |
+| Goland | 937.1 MB | 2026.2 | 2026-07-16 |
 | TeamCity | 1.5 GB | 2026.1.2 | 2026-07-01 |
 | DataSpell | 999.3 MB | 2026.1.2 | 2026-05-22 |
 | AppCode | 2.0 GB | 2023.1.5 | 2024-06-12 |
 
 ### Link for `Windows`
 
-* <https://download-cdn.jetbrains.com/python/dataspell-2026.1.2.exe>
-* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2026.1.2.exe>
 * <https://download-cdn.jetbrains.com/idea/idea-2026.2.exe>
-* <https://download-cdn.jetbrains.com/resharper/dotUltimate.2026.2/JetBrains.dotUltimate.2026.2.exe>
 * <https://download-cdn.jetbrains.com/webstorm/WebStorm-2026.2.exe>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2026.2.exe>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2026.2.exe>
+* <https://download-cdn.jetbrains.com/datagrip/datagrip-2026.2.1.exe>
+* <https://download-cdn.jetbrains.com/resharper/dotUltimate.2026.2/JetBrains.dotUltimate.2026.2.exe>
+* <https://download-cdn.jetbrains.com/python/dataspell-2026.1.2.exe>
 * <https://download-cdn.jetbrains.com/rustrover/RustRover-2026.2.exe>
+* <https://download-cdn.jetbrains.com/webide/PhpStorm-2026.2.exe>
+* <https://download-cdn.jetbrains.com/go/goland-2026.2.exe>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2026.2.0.1.exe>
+* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2026.1.2.exe>
 * <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2026.2.exe>
 * <https://download-cdn.jetbrains.com/python/pycharm-2026.2.exe>
-* <https://download-cdn.jetbrains.com/datagrip/datagrip-2026.2.1.exe>
-* <https://download-cdn.jetbrains.com/go/goland-2026.2.exe>
-* <https://download-cdn.jetbrains.com/webide/PhpStorm-2026.2.exe>
 
 ### Link for `Windows ARM64`
 
-* <https://download-cdn.jetbrains.com/python/dataspell-2026.1.2-aarch64.exe>
 * <https://download-cdn.jetbrains.com/idea/idea-2026.2-aarch64.exe>
 * <https://download-cdn.jetbrains.com/webstorm/WebStorm-2026.2-aarch64.exe>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2026.2-aarch64.exe>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2026.2-aarch64.exe>
+* <https://download-cdn.jetbrains.com/datagrip/datagrip-2026.2.1-aarch64.exe>
+* <https://download-cdn.jetbrains.com/python/dataspell-2026.1.2-aarch64.exe>
 * <https://download-cdn.jetbrains.com/rustrover/RustRover-2026.2-aarch64.exe>
+* <https://download-cdn.jetbrains.com/webide/PhpStorm-2026.2-aarch64.exe>
+* <https://download-cdn.jetbrains.com/go/goland-2026.2-aarch64.exe>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2026.2.0.1-aarch64.exe>
 * <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2026.2-aarch64.exe>
 * <https://download-cdn.jetbrains.com/python/pycharm-2026.2-aarch64.exe>
-* <https://download-cdn.jetbrains.com/datagrip/datagrip-2026.2.1-aarch64.exe>
-* <https://download-cdn.jetbrains.com/go/goland-2026.2-aarch64.exe>
-* <https://download-cdn.jetbrains.com/webide/PhpStorm-2026.2-aarch64.exe>
 
 ### Link for `Linux`
 
-* <https://download-cdn.jetbrains.com/python/dataspell-2026.1.2.tar.gz>
-* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2026.1.2.tar.gz>
 * <https://download-cdn.jetbrains.com/idea/idea-2026.2.tar.gz>
 * <https://download-cdn.jetbrains.com/webstorm/WebStorm-2026.2.tar.gz>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2026.2.tar.gz>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2026.2.tar.gz>
+* <https://download-cdn.jetbrains.com/datagrip/datagrip-2026.2.1.tar.gz>
+* <https://download-cdn.jetbrains.com/python/dataspell-2026.1.2.tar.gz>
 * <https://download-cdn.jetbrains.com/rustrover/RustRover-2026.2.tar.gz>
+* <https://download-cdn.jetbrains.com/webide/PhpStorm-2026.2.tar.gz>
+* <https://download-cdn.jetbrains.com/go/goland-2026.2.tar.gz>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2026.2.0.1.tar.gz>
+* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2026.1.2.tar.gz>
 * <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2026.2.tar.gz>
 * <https://download-cdn.jetbrains.com/python/pycharm-2026.2.tar.gz>
-* <https://download-cdn.jetbrains.com/datagrip/datagrip-2026.2.1.tar.gz>
-* <https://download-cdn.jetbrains.com/go/goland-2026.2.tar.gz>
-* <https://download-cdn.jetbrains.com/webide/PhpStorm-2026.2.tar.gz>
 
 ### Link for `Linux ARM64`
 
-* <https://download-cdn.jetbrains.com/python/dataspell-2026.1.2-aarch64.tar.gz>
 * <https://download-cdn.jetbrains.com/idea/idea-2026.2-aarch64.tar.gz>
 * <https://download-cdn.jetbrains.com/webstorm/WebStorm-2026.2-aarch64.tar.gz>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2026.2-aarch64.tar.gz>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2026.2-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/datagrip/datagrip-2026.2.1-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/python/dataspell-2026.1.2-aarch64.tar.gz>
 * <https://download-cdn.jetbrains.com/rustrover/RustRover-2026.2-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/webide/PhpStorm-2026.2-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/go/goland-2026.2-aarch64.tar.gz>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2026.2.0.1-aarch64.tar.gz>
 * <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2026.2-aarch64.tar.gz>
 * <https://download-cdn.jetbrains.com/python/pycharm-2026.2-aarch64.tar.gz>
-* <https://download-cdn.jetbrains.com/datagrip/datagrip-2026.2.1-aarch64.tar.gz>
-* <https://download-cdn.jetbrains.com/go/goland-2026.2-aarch64.tar.gz>
-* <https://download-cdn.jetbrains.com/webide/PhpStorm-2026.2-aarch64.tar.gz>
 
 ### Link for `Mac`
 
-* <https://download-cdn.jetbrains.com/python/dataspell-2026.1.2.dmg>
-* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2026.1.2.tar.gz>
 * <https://download-cdn.jetbrains.com/idea/idea-2026.2.dmg>
 * <https://download-cdn.jetbrains.com/webstorm/WebStorm-2026.2.dmg>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2026.2.dmg>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2026.2.dmg>
+* <https://download-cdn.jetbrains.com/datagrip/datagrip-2026.2.1.dmg>
+* <https://download-cdn.jetbrains.com/objc/AppCode-2023.1.5.dmg>
+* <https://download-cdn.jetbrains.com/python/dataspell-2026.1.2.dmg>
 * <https://download-cdn.jetbrains.com/rustrover/RustRover-2026.2.dmg>
+* <https://download-cdn.jetbrains.com/webide/PhpStorm-2026.2.dmg>
+* <https://download-cdn.jetbrains.com/go/goland-2026.2.dmg>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2026.2.0.1.dmg>
+* <https://download-cdn.jetbrains.com/teamcity/TeamCity-2026.1.2.tar.gz>
 * <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2026.2.dmg>
 * <https://download-cdn.jetbrains.com/python/pycharm-2026.2.dmg>
-* <https://download-cdn.jetbrains.com/objc/AppCode-2023.1.5.dmg>
-* <https://download-cdn.jetbrains.com/datagrip/datagrip-2026.2.1.dmg>
-* <https://download-cdn.jetbrains.com/go/goland-2026.2.dmg>
-* <https://download-cdn.jetbrains.com/webide/PhpStorm-2026.2.dmg>
 
 ### Link for `Mac M1`
 
-* <https://download-cdn.jetbrains.com/python/dataspell-2026.1.2-aarch64.dmg>
 * <https://download-cdn.jetbrains.com/idea/idea-2026.2-aarch64.dmg>
 * <https://download-cdn.jetbrains.com/webstorm/WebStorm-2026.2-aarch64.dmg>
-* <https://download-cdn.jetbrains.com/cpp/CLion-2026.2-aarch64.dmg>
 * <https://download-cdn.jetbrains.com/ruby/RubyMine-2026.2-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/datagrip/datagrip-2026.2.1-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/objc/AppCode-2023.1.5-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/python/dataspell-2026.1.2-aarch64.dmg>
 * <https://download-cdn.jetbrains.com/rustrover/RustRover-2026.2-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/webide/PhpStorm-2026.2-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/go/goland-2026.2-aarch64.dmg>
+* <https://download-cdn.jetbrains.com/cpp/CLion-2026.2.0.1-aarch64.dmg>
 * <https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2026.2-aarch64.dmg>
 * <https://download-cdn.jetbrains.com/python/pycharm-2026.2-aarch64.dmg>
-* <https://download-cdn.jetbrains.com/objc/AppCode-2023.1.5-aarch64.dmg>
-* <https://download-cdn.jetbrains.com/datagrip/datagrip-2026.2.1-aarch64.dmg>
-* <https://download-cdn.jetbrains.com/go/goland-2026.2-aarch64.dmg>
-* <https://download-cdn.jetbrains.com/webide/PhpStorm-2026.2-aarch64.dmg>
